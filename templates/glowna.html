@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link href="{{url_for('static', filename='css/glowna.css')}}" rel="stylesheet" />
+{% endblock %}
+
+{% block slogan1 %}Główna{% endblock %}
+{% block slogan2 %}Główna{% endblock %}
+
+
+{% block content %}
+
+<div id="cechy">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row text-center">
+                    <div class="col-sm-4 my-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <i class="fa-solid fa-7x fa-arrow-trend-up" style="--fa-animation-duration: 3s; --fa-animation-delay:1s;"></i>
+                            </div>
+                            <div class="col-12">
+                                <h1>Niezawodność</h1><br>
+                                <hr class="divider divider-light"></hr>
+                                <h2>Pomożemy Ci z każdym problemem.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <i class="fa-solid fa-7x fa-shake fa-burst"style="--fa-animation-duration: 3s; --fa-animation-delay:2s;"></i>
+                            </div>
+                            <div class="col-12">
+                                <h1>Kreatywność</h1><br>
+                                <hr class="divider divider-light"></hr>
+                                <h2>Jesteśmy nieograniczeni.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <i class="fa-solid fa-7x fa-burst" style="--fa-animation-duration: 3s; --fa-animation-delay:3s;"></i>
+                            </div>
+                            <div class="col-12">
+                                <h1>Niezawodność</h1><br>
+                                <hr class="divider divider-light"></hr>
+                                <h2>Pomożemy Ci z każdym problemem.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height:300px;"></div>
+<div style="height:300px;"></div>
+<div style="height:300px;"></div>
+<div style="height:300px;"></div>
+<div style="height:300px;"></div>
+<div style="height:300px;"></div>
+{% endblock %}
