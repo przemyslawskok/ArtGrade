@@ -15,13 +15,5 @@ def nasze_realizacje():
 def blog():
     return render_template("/blog.html")
 
-@app.route('/oferta')
-def oferta():
-    return render_template("/oferta.html")
-
-@app.route('/kontakt')
-def kontakt():
-    return render_template("/kontakt.html")
-
 
 app.run('0.0.0.0',port=230,debug=True)
