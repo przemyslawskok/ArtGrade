@@ -3,8 +3,8 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray(".revealLeft").forEach(function (elem) {
   ScrollTrigger.create({
     trigger: elem,
-    start: "top 80%",
-    end: "bottom 20%",
+    start: "top 100%",
+    end: "bottom 10%",
     markers: false,
     onEnter: function () {
       gsap.fromTo(
@@ -44,8 +44,8 @@ gsap.utils.toArray(".revealLeft").forEach(function (elem) {
 gsap.utils.toArray(".revealRight").forEach(function (elem) {
   ScrollTrigger.create({
     trigger: elem,
-    start: "top 80%",
-    end: "bottom 20%",
+    start: "top 100%",
+    end: "bottom 10%",
     markers: false,
     onEnter: function () {
       gsap.fromTo(
@@ -86,8 +86,8 @@ gsap.utils.toArray(".revealRight").forEach(function (elem) {
 gsap.utils.toArray(".revealUp").forEach(function (elem) {
   ScrollTrigger.create({
     trigger: elem,
-    start: "top 80%",
-    end: "bottom 20%",
+    start: "top 100%",
+    end: "bottom 10%",
     markers: false,
     onEnter: function () {
       gsap.fromTo(
