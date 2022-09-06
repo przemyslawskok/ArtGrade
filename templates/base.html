@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ArtGrade</title>
+        <title>ArtGrade - Twój dobry wybór!</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/favicon.ico')}}" />
+        <link rel="icon" type="image/svg" href="{{url_for('static', filename='assets/favicon.svg')}}" />
         <!-- Font Awesome icons (free version)-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,13 +19,13 @@
         {% block head %}
         {% endblock %}
     </head>
-    <body id="page-top">
+    <body id="page-top" >
         <!-- Navigation-->
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="/">
-                  ArtGrade
-                   <img src="{{url_for('static', filename='assets/img/ford.svg')}}" alt="..." />
+                   <img src="{{url_for('static', filename='assets/favicon.svg')}}" alt="Logo ArtGrade" />   
+                  ArtGrade       
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -47,11 +47,17 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">{% block slogan1 %}{% endblock %}</div>
-                <div class="masthead-heading text-uppercase">{% block slogan2 %}{% endblock %}</div>
+                <div class="masthead-subheading" style="color:black;"> {% block slogan1 %}{% endblock %}</div>
+                <div class="masthead-heading text-uppercase" style="color:black;"> {% block slogan2 %}{% endblock %}</div>
+                
+            </div>
+            <div class="masthead-button text-center" >
+                <a href="#o_nas"> 
+                    <i class="fa-solid fa-angle-down fa-8x fa-bounce" style="color:white;" ></i>
+                </a>
             </div>
         </header>
-        
+      
         <div id="content">
         {% block content%}{% endblock %}
         </div>
