@@ -3,6 +3,8 @@
 <link href="{{url_for('static', filename='css/glowna.css')}}" rel="stylesheet" />
 <link href="{{url_for('static', filename='css/text-animation.css')}}" rel="stylesheet" />
 <link href="{{url_for('static', filename='css/background.css')}}" rel="stylesheet" />
+<link href="{{url_for('static', filename='css/gallery.css')}}" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 {% endblock %}
 {% block slogan1 %}
 <!--
@@ -12,7 +14,7 @@
 {% block slogan2 %}
 {% endblock %}
 {% block content %}
-<div id="content" style="padding:10vw;padding-bottom:10px;" class="bg">
+<div id="content" style="padding:10vw;padding-bottom:10px;padding-top:1px;" class="bg">
    <div id="o_nas" class="p-2 my-5">
       <!-- MOBILE VIEW -->
       <div class="d-block d-sm-block d-md-none text-center">
@@ -31,19 +33,14 @@
                <div class="row">
                   <div class="col-12">
                      <h2 class="revealLeft">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
-                     </h2>
-                  </div>
-                  <div class="col-12" >
-                     <h2 class="revealLeft">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
+                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/zebry/otwartosc.png')}}" alt="">
                      </h2>
                   </div>
                </div>
             </div>
          </div>
          <div class="row">
-            <div class="col-sm-4 col-12">
+            <div class="col-12">
                <div class="row">
                   <div class="col-12" style="height:20vh;">
                      <p class="revealRight" style="font-size:8vw;">do tego</p>
@@ -53,16 +50,11 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-8 col-12">
+            <div class="col-12">
                <div class="row">
                   <div class="col-12">
                      <h2 class="revealLeft">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
-                     </h2>
-                  </div>
-                  <div class="col-12">
-                     <h2 class="revealLeft">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
+                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/zebry/kreatywnosc.png')}}" alt="">
                      </h2>
                   </div>
                </div>
@@ -82,61 +74,51 @@
       </div>
       <!-- LARGE VIEW -->
       <div class="d-none d-md-block">
-         <div class="row  ">
-            <div class="col-sm-4 col-12">
+         <div class="row">
+            <div class="col-sm-8 col-12">
                <div class="row text-center">
-                  <div class="col-12 " style="height:20vh;">
-                     <p class="revealRight" style="font-size:2.5vw;"> co powiesz na</p>
+                  <div class="col-12 mb-5" style="height:20vh;">
+                     <p class="revealRight" style="font-size:3vw;"> co powiesz na</p>
                   </div>
-                  <div class="col-12" style="height:20vh;">
-                     <p class="revealRight fw-bold" style="font-size:3vw;">  OTWARTOŚĆ?</p>
+                  <div class="col-12 mt-5" style="height:20vh;">
+                     <p class="revealRight fw-bold" style="font-size:4vw;">  OTWARTOŚĆ?</p>
                   </div>
                </div>
             </div>
-            <div class="col-sm-8 col-12">
+            <div class="col-sm-4 col-12">
                <div class="row">
-                  <div class="col-6">
+                  <div class="col-12" >
                      <h2 class="revealLeft">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
-                     </h2>
-                  </div>
-                  <div class="col-6" >
-                     <h2 class="revealLeft">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
+                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/zebry/otwartosc.png')}}" alt="">
                      </h2>
                   </div>
                </div>
             </div>
          </div>
          <div class="row">
-            <div class="col-sm-8 col-12">
+            <div class="col-sm-4 col-12">
                <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                      <h2 class="revealRight">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
-                     </h2>
-                  </div>
-                  <div class="col-sm-6">
-                     <h2 class="revealRight">
-                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/1000x500.png')}}" alt="">
+                        <img class='img-fluid' src="{{url_for('static', filename='assets/img/main_content/zebry/kreatywnosc.png')}}" alt="">
                      </h2>
                   </div>
                </div>
             </div>
-            <div class="col-sm-4 col-12">
+            <div class="col-sm-8 col-12">
                <div class="row text-center">
-                  <div class="col-12" style="height:20vh;">
-                     <p class="revealLeft" style="font-size:2.5vw;"> do tego</p>
+                  <div class="col-12 mb-5" style="height:20vh;">
+                     <p class="revealLeft" style="font-size:3vw;"> a do tego</p>
                   </div>
-                  <div class="col-12" style="height:20vh;">
-                     <p class="revealLeft fw-bold" style="font-size:3vw;"> KREATYWNOŚĆ?</p>
+                  <div class="col-12 mt-5" style="height:20vh;">
+                     <p class="revealLeft fw-bold" style="font-size:4vw;"> KREATYWNOŚĆ?</p>
                   </div>
                </div>
             </div>
          </div>
          <div class="row text-center">
             <div class="col-12">
-               <p class="revealUp" style="font-size:2.5vw;"> i najważniejsze,</p>
+               <p class="revealUp" style="font-size:3.5vw;"> i najważniejsze,</p>
             </div>
             <div class="col-12">
                <p class="revealUp fw-bold" style="font-size:7vw"> PASJA! </p>
@@ -208,87 +190,29 @@
    <hr id="custom_hr" class="my-5">
 
    <div id="nasze_realizacje" class="my-5 d-inline" >
-      galeria..
-      <!--
-     <div class="row">
-         <div class='col-12 text-center'>
-         <div class="row">
-               <div class="col-12 my-5">
-                  
-                  <h1 class="revealUp">Nasze realizacje</h1>
-               </div>
-
-
-               <div class="col-12">
-                  <div class="row">
-                     <div class="col-1"></div>
-                     <div class="col-sm-10 col-12 ">
-                           <div class="col-12 my-5">
-                              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-               
-                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                 </div>
-                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                       <img src="{{url_for('static', filename='assets/img/tla/test.jpg')}}" class="d-block w-100" alt="...">
-                                       <div class="carousel-caption d-none d-md-block">
-                                          <h5>First slide label</h5>
-                                          <p>Some representative placeholder content for the first slide.</p>
-                                       </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                       <img src="{{url_for('static', filename='assets/img/tla/test.jpg')}}" class="d-block w-100" alt="...">
-                                       <div class="carousel-caption d-none d-md-block">
-                                          <h5>Second slide label</h5>
-                                          <p>Some representative placeholder content for the second slide.</p>
-                                       </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                       <img src="{{url_for('static', filename='assets/img/tla/test.jpg')}}" class="d-block w-100" alt="...">
-                                       <div class="carousel-caption d-none d-md-block">
-                                          <h5>Third slide label</h5>
-                                          <p>Some representative placeholder content for the third slide.</p>
-                                       </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                       <img src="{{url_for('static', filename='assets/img/tla/test.jpg')}}" class="d-block w-100" alt="...">
-                                       <div class="carousel-caption d-none d-md-block">
-                                          <h5>Czwart slide label</h5>
-                                          <p>Some representative placeholder content for the third slide.</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                 <span class="visually-hidden">Previous</span>
-                                 </button>
-                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                 <span class="visually-hidden">Next</span>
-                                 </button>
-                              </div>
-                           
-                           
-                              </div>
-                           </div>
-                     </div>
-                     <div class="col-1"></div>
-                  </div>
-               </div>
-               
-
-
-               
+      <div class="row">
+         <div class="col-12 text-center my-5">
+            <h1 class="revealUp"> Nasze realizacje </h1>
          </div>
-            
+         <div class="col-12">
+            <div style="background-color: transparent;" class="swiffy-slider slider-item-show2 slider-nav-outside slider-nav-white slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-1x1 shadow-lg py-3 py-lg-4" data-slider-nav-autoplay-interval="2000">
+               <div class="slider-container">
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/1.png')}}" loading="lazy" alt="..."></div>
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/2.png')}}" loading="lazy" alt="..."></div>
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/3.png')}}" loading="lazy" alt="..."></div>
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/4.png')}}" loading="lazy" alt="..."></div>
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/5.png')}}" loading="lazy" alt="..."></div>
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/6.png')}}" loading="lazy" alt="..."></div>
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/7.png')}}" loading="lazy" alt="..."></div>
+                  <div><img src="{{url_for('static', filename='assets/img/main_content/realizacje/8.png')}}" loading="lazy" alt="..."></div>
+               </div>
+           
+               <button type="button" class="slider-nav" aria-label="Go left"></button>
+               <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+           
+           </div>
          </div>
-
-  
-      -->
+        
   </div>
 
 
@@ -372,5 +296,7 @@
 {% block scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 <script src="{{url_for('static', filename='js/text-animation.js')}}"></script>
+<script src="{{url_for('static', filename='js/gallery.js')}}"></script>
 {% endblock %}

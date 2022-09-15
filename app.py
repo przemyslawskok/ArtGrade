@@ -76,10 +76,6 @@ def dezaktywuj_wiadomosc(id):
     else:
         return redirect("/login")
 
-  
-@app.route('/blog')
-def blog():
-    return render_template("/blog.html")
 
 
 app.run('0.0.0.0',port=240,debug=True)
