@@ -9,14 +9,14 @@ recaptcha = ReCaptcha(app=app)
 
 app.config.update(dict(
     RECAPTCHA_ENABLED = True,
-    RECAPTCHA_SITE_KEY = "6Le3lqAgAAAAANeOj9IyAlAmGcCeNtZgDr5ggUEO",
-    RECAPTCHA_SECRET_KEY = "6Le3lqAgAAAAAPPTYNnc_OF82kYagGoFkTCDTauP",
+    RECAPTCHA_SITE_KEY = "",
+    RECAPTCHA_SECRET_KEY = "",
 ))
 
 recaptcha = ReCaptcha()
 recaptcha.init_app(app)
 
-app.config['SECRET_KEY'] = 'artgradejakublaban'
+app.config['SECRET_KEY'] = ''
 
 
 #database
